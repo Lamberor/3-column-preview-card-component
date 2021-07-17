@@ -1,0 +1,244 @@
+/* ======
+  color
+  ====== */
+
+$bright-orange: hsl(31, 77%, 52%);
+$dark-cyan: hsl(184, 100%, 22%);
+$very-dark-cyan: hsl(179, 100%, 13%);
+$trans-white: hsla(0, 0%, 100%, 0.75);
+$light-gray: hsl(0, 0%, 95%);
+
+/* ======
+  global style
+  ====== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 15px;
+  font-family: 'Lexend Deca', sans-serif;
+  background-color: $light-gray;
+}
+
+/* ======
+  main style
+  ====== */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10% 5% 0;
+  color: $light-gray;
+
+  &__sedans {
+    background-color: $bright-orange;
+    text-align: left;
+    width: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding: 2rem 4rem;
+
+    img {
+      transform: scale(0.8);
+      position: relative;
+      right: 0.6rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &__title {
+      font-size: 2rem;
+      text-transform: uppercase;
+      font-family: 'Big Shoulders Display', cursive;
+      margin-bottom: 1.5rem;
+    }
+
+    &__desc {
+      font-size: 0.8rem;
+      line-height: 1.6;
+      color: $trans-white;
+      margin-bottom: 1.5rem;
+    }
+
+    &__button {
+      background-color: $light-gray;
+      color: $bright-orange;
+      text-align: center;
+      width: 70%;
+      padding: 0.5rem;
+      border: 0.1rem solid $light-gray;
+      border-radius: 2rem;
+
+      &:hover {
+        cursor: pointer;
+        background-color: $bright-orange;
+        color: $light-gray;
+      }
+    }
+  }
+
+  &__suvs {
+    background-color: $dark-cyan;
+    text-align: left;
+    width: 100%;
+    padding: 2rem 4rem;
+
+    img {
+      transform: scale(0.8);
+      position: relative;
+      right: 0.6rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &__title {
+      font-size: 2rem;
+      text-transform: uppercase;
+      font-family: 'Big Shoulders Display', cursive;
+      margin-bottom: 1.5rem;
+    }
+
+    &__desc {
+      font-size: 0.8rem;
+      line-height: 1.6;
+      color: $trans-white;
+      margin-bottom: 1.5rem;
+    }
+
+    &__button {
+      background-color: $light-gray;
+      color: $dark-cyan;
+      text-align: center;
+      width: 70%;
+      padding: 0.5rem;
+      border: 0.1rem solid $light-gray;
+      border-radius: 2rem;
+
+      &:hover {
+        cursor: pointer;
+        background-color: $dark-cyan;
+        color: $light-gray;
+      }
+    }
+  }
+
+  &__luxury {
+    background-color: $very-dark-cyan;
+    text-align: left;
+    width: 100%;
+    border-radius: 0 0 0.5rem 0.5rem;
+    padding: 2rem 4rem;
+
+    img {
+      transform: scale(0.8);
+      position: relative;
+      right: 0.6rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &__title {
+      font-size: 2rem;
+      text-transform: uppercase;
+      font-family: 'Big Shoulders Display', cursive;
+      margin-bottom: 1.5rem;
+    }
+
+    &__desc {
+      font-size: 0.8rem;
+      line-height: 1.6;
+      color: $trans-white;
+      margin-bottom: 1.5rem;
+    }
+
+    &__button {
+      background-color: $light-gray;
+      color: $very-dark-cyan;
+      text-align: center;
+      width: 70%;
+      padding: 0.5rem;
+      border: 0.1rem solid $light-gray;
+      border-radius: 2rem;
+
+      &:hover {
+        cursor: pointer;
+        background-color: $very-dark-cyan;
+        color: $light-gray;
+      }
+    }
+  }
+}
+
+/* ======
+  footer style
+  ====== */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 10%;
+
+  a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+
+    &:hover {
+      color: hsl(268, 100%, 14%);
+    }
+  }
+}
+
+/* ======
+  media query
+  ====== */
+@media (min-width: 678px) {
+  .container {
+    flex-direction: row;
+    align-items: stretch;
+    margin: 12% auto 0;
+    max-width: 80%;
+    max-height: 80vh;
+
+    &__sedans {
+      // max-height: 100vh;
+      padding: 2rem 2.5rem;
+      border-radius: 0.5rem 0 0 0.5rem;
+
+      &__desc {
+        margin-bottom: 4rem;
+      }
+
+      &__button {
+        min-width: 50%;
+      }
+    }
+
+    &__suvs {
+      padding: 2rem 2.5rem;
+      // max-height: 100vh;
+
+      &__desc {
+        margin-bottom: 4rem;
+      }
+      &__button {
+        min-width: 50%;
+      }
+    }
+
+    &__luxury {
+      padding: 2rem 2.5rem;
+      // max-height: 100vh;
+      border-radius: 0 0.5rem 0.5rem 0;
+
+      &__desc {
+        margin-bottom: 4rem;
+      }
+      &__button {
+        min-width: 50%;
+      }
+    }
+  }
+}
