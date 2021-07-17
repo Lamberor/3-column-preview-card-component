@@ -165,41 +165,44 @@ body {
 /* ======
   media query
   ====== */
-@media (min-width: 678px) {
+@media (min-width: 800px) {
   .container {
     flex-direction: row;
     align-items: stretch;
     margin: 12% auto 0;
-    max-width: 80%;
+    max-width: 70vw;
     max-height: 80vh;
   }
   .container__sedans {
-    padding: 2rem 2.5rem;
+    padding: 2rem 3.5rem;
     border-radius: 0.5rem 0 0 0.5rem;
   }
   .container__sedans__desc {
     margin-bottom: 4rem;
+    height: 22vh;
   }
   .container__sedans__button {
-    min-width: 50%;
+    width: 9.375rem;
   }
   .container__suvs {
-    padding: 2rem 2.5rem;
+    padding: 2rem 3.5rem;
   }
   .container__suvs__desc {
     margin-bottom: 4rem;
+    height: 22vh;
   }
   .container__suvs__button {
-    min-width: 50%;
+    width: 9.375rem;
   }
   .container__luxury {
-    padding: 2rem 2.5rem;
+    padding: 2rem 3.5rem;
     border-radius: 0 0.5rem 0.5rem 0;
   }
   .container__luxury__desc {
     margin-bottom: 4rem;
+    height: 22vh;
   }
   .container__luxury__button {
-    min-width: 50%;
+    width: 9.375rem;
   }
 }/*# sourceMappingURL=style.css.map */

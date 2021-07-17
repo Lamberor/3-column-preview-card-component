@@ -194,50 +194,50 @@ body {
 /* ======
   media query
   ====== */
-@media (min-width: 678px) {
+@media (min-width: 800px) {
   .container {
     flex-direction: row;
     align-items: stretch;
     margin: 12% auto 0;
-    max-width: 80%;
+    max-width: 70vw;
     max-height: 80vh;
 
     &__sedans {
-      // max-height: 100vh;
-      padding: 2rem 2.5rem;
+      padding: 2rem 3.5rem;
       border-radius: 0.5rem 0 0 0.5rem;
 
       &__desc {
         margin-bottom: 4rem;
+        height: 22vh;
       }
 
       &__button {
-        min-width: 50%;
+        width: 9.375rem;
       }
     }
 
     &__suvs {
-      padding: 2rem 2.5rem;
-      // max-height: 100vh;
+      padding: 2rem 3.5rem;
 
       &__desc {
         margin-bottom: 4rem;
+        height: 22vh;
       }
       &__button {
-        min-width: 50%;
+        width: 9.375rem;
       }
     }
 
     &__luxury {
-      padding: 2rem 2.5rem;
-      // max-height: 100vh;
+      padding: 2rem 3.5rem;
       border-radius: 0 0.5rem 0.5rem 0;
 
       &__desc {
         margin-bottom: 4rem;
+        height: 22vh;
       }
       &__button {
-        min-width: 50%;
+        width: 9.375rem;
       }
     }
   }
